@@ -129,7 +129,7 @@ class CFTypeDetector {
         return $t;
       break;
 
-      case is_numeric($value):
+      case (is_int($value) || is_float($value)):
         return new CFNumber($value);
       break;
 
